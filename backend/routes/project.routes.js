@@ -13,8 +13,8 @@ const router = express.Router();
 
 router.post("/" , authenticate , createProject);
 router.get("/" , authenticate , getAllProjects);
-router.get('/:id' , authenticate , getProjectById);
-router.put('/:id' , authenticate , updateProject);
-router.delete("/:id" , authenticate , deleteProject);
+router.get('/:projectId' , authenticate , getProjectById);
+router.put('/:projectId' , authenticate , updateProject);
+router.delete("/:projectId" , authenticate , deleteProject);
 
 export default router;
